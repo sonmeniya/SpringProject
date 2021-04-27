@@ -1,12 +1,11 @@
 package com.example.sweater.domain;
 
-import jdk.Exported;
-
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Exported
+@Entity
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
